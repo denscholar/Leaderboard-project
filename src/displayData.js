@@ -4,7 +4,7 @@ const displayData = (data) => {
   const scoreData = data.result;
   scoreData.forEach((data) => {
     const listItem = document.createElement('li');
-    listItem.innerText = `${data.user} : ${data.score}`;
+    listItem.innerHTML = `${data.user}<span>${data.score}</span>`;
     ul.appendChild(listItem);
   });
 };
