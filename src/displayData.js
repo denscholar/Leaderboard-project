@@ -1,10 +1,10 @@
-import scoreData from './scoreData.js';
-import ul from './selectors.js';
+import { ul } from './selectors.js';
 
-const displayData = () => {
+const displayData = (data) => {
+  const scoreData = data.result;
   scoreData.forEach((data) => {
     const listItem = document.createElement('li');
-    listItem.innerText = `${data.name} : ${data.score}`;
+    listItem.innerText = `${data.user} : ${data.score}`;
     ul.appendChild(listItem);
   });
 };
