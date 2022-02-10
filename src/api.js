@@ -3,7 +3,7 @@ import {
   form, name, score, refreshButton,
 } from './selectors.js';
 
-const urlApi = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/ROBTha3yh4xuIeTiwKk8/scores/';
+const urlApi = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/KyWbURKYRpdKPZHomdnx/scores/';
 
 const setScore = async (e) => {
   e.preventDefault();
